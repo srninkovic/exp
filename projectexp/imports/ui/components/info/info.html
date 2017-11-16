@@ -1,0 +1,13 @@
+<template name="info">
+  <h2></h2>
+  <ul>
+      <form class="info-link-add">
+        <input type="text" name="title" placeholder="Title" required>
+        <!-- <input type="url" name="url" placeholder="Url" required> -->
+        <input type="submit" name="submit" value="Add new">
+      </form>
+    {{#each links}}
+      <a href="{{url}}" target="_blank">{{title}}</a><br />
+    {{/each}}
+  </ul>
+</template>
